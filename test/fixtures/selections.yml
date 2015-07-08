@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  healthy: false
+  spicy: false
+  cheesy: false
+  sandwiches: false
+  tacos: false
+  asian: false
+  fusion: false
+  bbq: false
+  dessert: false
+  burgers: false
+  fried: false
+  seafood: false
+  meal_id: 
+
+two:
+  healthy: false
+  spicy: false
+  cheesy: false
+  sandwiches: false
+  tacos: false
+  asian: false
+  fusion: false
+  bbq: false
+  dessert: false
+  burgers: false
+  fried: false
+  seafood: false
+  meal_id: 

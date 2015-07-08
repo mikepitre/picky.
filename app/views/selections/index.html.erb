@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Selections</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Healthy</th>
+      <th>Spicy</th>
+      <th>Cheesy</th>
+      <th>Sandwiches</th>
+      <th>Tacos</th>
+      <th>Asian</th>
+      <th>Fusion</th>
+      <th>Bbq</th>
+      <th>Dessert</th>
+      <th>Burgers</th>
+      <th>Fried</th>
+      <th>Seafood</th>
+      <th>Meal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @selections.each do |selection| %>
+      <tr>
+        <td><%= selection.healthy %></td>
+        <td><%= selection.spicy %></td>
+        <td><%= selection.cheesy %></td>
+        <td><%= selection.sandwiches %></td>
+        <td><%= selection.tacos %></td>
+        <td><%= selection.asian %></td>
+        <td><%= selection.fusion %></td>
+        <td><%= selection.bbq %></td>
+        <td><%= selection.dessert %></td>
+        <td><%= selection.burgers %></td>
+        <td><%= selection.fried %></td>
+        <td><%= selection.seafood %></td>
+        <td><%= selection.meal %></td>
+        <td><%= link_to 'Show', selection %></td>
+        <td><%= link_to 'Edit', edit_selection_path(selection) %></td>
+        <td><%= link_to 'Destroy', selection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Selection', new_selection_path %>

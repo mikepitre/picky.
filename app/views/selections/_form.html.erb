@@ -1,0 +1,69 @@
+<%= form_for(@selection) do |f| %>
+  <% if @selection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@selection.errors.count, "error") %> prohibited this selection from being saved:</h2>
+
+      <ul>
+      <% @selection.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :healthy %><br>
+    <%= f.check_box :healthy %>
+  </div>
+  <div class="field">
+    <%= f.label :spicy %><br>
+    <%= f.check_box :spicy %>
+  </div>
+  <div class="field">
+    <%= f.label :cheesy %><br>
+    <%= f.check_box :cheesy %>
+  </div>
+  <div class="field">
+    <%= f.label :sandwiches %><br>
+    <%= f.check_box :sandwiches %>
+  </div>
+  <div class="field">
+    <%= f.label :tacos %><br>
+    <%= f.check_box :tacos %>
+  </div>
+  <div class="field">
+    <%= f.label :asian %><br>
+    <%= f.check_box :asian %>
+  </div>
+  <div class="field">
+    <%= f.label :fusion %><br>
+    <%= f.check_box :fusion %>
+  </div>
+  <div class="field">
+    <%= f.label :bbq %><br>
+    <%= f.check_box :bbq %>
+  </div>
+  <div class="field">
+    <%= f.label :dessert %><br>
+    <%= f.check_box :dessert %>
+  </div>
+  <div class="field">
+    <%= f.label :burgers %><br>
+    <%= f.check_box :burgers %>
+  </div>
+  <div class="field">
+    <%= f.label :fried %><br>
+    <%= f.check_box :fried %>
+  </div>
+  <div class="field">
+    <%= f.label :seafood %><br>
+    <%= f.check_box :seafood %>
+  </div>
+  <div class="field">
+    <%= f.label :meal_id %><br>
+    <%= f.text_field :meal_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
