@@ -13,6 +13,11 @@ one:
   burgers: false
   fried: false
   seafood: false
+  price: MyString
+  distance: MyString
+  take_out: false
+  outdoor_seating: false
+  serves_alcohol: false
   meal_id: 
 
 two:
@@ -28,4 +33,9 @@ two:
   burgers: false
   fried: false
   seafood: false
+  price: MyString
+  distance: MyString
+  take_out: false
+  outdoor_seating: false
+  serves_alcohol: false
   meal_id: 

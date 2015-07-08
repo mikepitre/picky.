@@ -18,7 +18,7 @@ class SelectionsControllerTest < ActionController::TestCase
 
   test "should create selection" do
     assert_difference('Selection.count') do
-      post :create, selection: { asian: @selection.asian, bbq: @selection.bbq, burgers: @selection.burgers, cheesy: @selection.cheesy, dessert: @selection.dessert, fried: @selection.fried, fusion: @selection.fusion, healthy: @selection.healthy, meal_id: @selection.meal_id, sandwiches: @selection.sandwiches, seafood: @selection.seafood, spicy: @selection.spicy, tacos: @selection.tacos }
+      post :create, selection: { asian: @selection.asian, bbq: @selection.bbq, burgers: @selection.burgers, cheesy: @selection.cheesy, dessert: @selection.dessert, distance: @selection.distance, fried: @selection.fried, fusion: @selection.fusion, healthy: @selection.healthy, meal_id: @selection.meal_id, outdoor_seating: @selection.outdoor_seating, price: @selection.price, sandwiches: @selection.sandwiches, seafood: @selection.seafood, serves_alcohol: @selection.serves_alcohol, spicy: @selection.spicy, tacos: @selection.tacos, take_out: @selection.take_out }
     end
 
     assert_redirected_to selection_path(assigns(:selection))
@@ -35,7 +35,7 @@ class SelectionsControllerTest < ActionController::TestCase
   end
 
   test "should update selection" do
-    patch :update, id: @selection, selection: { asian: @selection.asian, bbq: @selection.bbq, burgers: @selection.burgers, cheesy: @selection.cheesy, dessert: @selection.dessert, fried: @selection.fried, fusion: @selection.fusion, healthy: @selection.healthy, meal_id: @selection.meal_id, sandwiches: @selection.sandwiches, seafood: @selection.seafood, spicy: @selection.spicy, tacos: @selection.tacos }
+    patch :update, id: @selection, selection: { asian: @selection.asian, bbq: @selection.bbq, burgers: @selection.burgers, cheesy: @selection.cheesy, dessert: @selection.dessert, distance: @selection.distance, fried: @selection.fried, fusion: @selection.fusion, healthy: @selection.healthy, meal_id: @selection.meal_id, outdoor_seating: @selection.outdoor_seating, price: @selection.price, sandwiches: @selection.sandwiches, seafood: @selection.seafood, serves_alcohol: @selection.serves_alcohol, spicy: @selection.spicy, tacos: @selection.tacos, take_out: @selection.take_out }
     assert_redirected_to selection_path(assigns(:selection))
   end
 

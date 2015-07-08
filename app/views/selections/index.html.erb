@@ -17,6 +17,11 @@
       <th>Burgers</th>
       <th>Fried</th>
       <th>Seafood</th>
+      <th>Price</th>
+      <th>Distance</th>
+      <th>Take out</th>
+      <th>Outdoor seating</th>
+      <th>Serves alcohol</th>
       <th>Meal</th>
       <th colspan="3"></th>
     </tr>
@@ -37,6 +42,11 @@
         <td><%= selection.burgers %></td>
         <td><%= selection.fried %></td>
         <td><%= selection.seafood %></td>
+        <td><%= selection.price %></td>
+        <td><%= selection.distance %></td>
+        <td><%= selection.take_out %></td>
+        <td><%= selection.outdoor_seating %></td>
+        <td><%= selection.serves_alcohol %></td>
         <td><%= selection.meal %></td>
         <td><%= link_to 'Show', selection %></td>
         <td><%= link_to 'Edit', edit_selection_path(selection) %></td>

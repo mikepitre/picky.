@@ -13,6 +13,11 @@ class CreateSelections < ActiveRecord::Migration
       t.boolean :burgers
       t.boolean :fried
       t.boolean :seafood
+      t.string :price
+      t.string :distance
+      t.boolean :take_out
+      t.boolean :outdoor_seating
+      t.boolean :serves_alcohol
       t.belongs_to :meal, index: true, foreign_key: true
 
       t.timestamps null: false
