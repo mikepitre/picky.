@@ -1,6 +1,6 @@
 class Foursquare < ActiveRecord::Base
   include HTTParty
-  base_uri 'https://api.foursquare.com/v2/venues/explore'
+  base_uri 'api.foursquare.com/v2/venues/explore'
 
   def client_id
     ENV['foursquare_client_id']
