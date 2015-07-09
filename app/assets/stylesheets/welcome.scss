@@ -1,0 +1,40 @@
+// * {
+//   border: solid 1px black;
+// }
+
+* {
+  box-sizing: border-box;
+}
+
+.top-section {
+  background-image: url('https://download.unsplash.com/photo-1428660386617-8d277e7deaf2');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  h1,h4 {
+  color: white;
+  margin-bottom: 375px;
+  margin-top: 0;
+  }
+  h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 20px;
+  }
+}
+
+
+.btn {
+  width: 60%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 75px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+
