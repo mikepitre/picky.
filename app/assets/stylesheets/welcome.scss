@@ -152,14 +152,31 @@ footer {
   margin-left: 10px;
 }
 
+.larger-displays {
+  display: none;
+}
+
+.nav-right {
+  display: none;
+}
+
+@media (min-width: 468px) {
+  .tag-line {
+    font-size: 2.5em;
+  }
+}
+
 @media (min-width: 768px) {
   .banner {
   height: 510px;
-  margin-top: 50px;
   }
 
   .entire-navbar {
     display: none;
+  }
+
+  h3 {
+    line-height: .8px;
   }
 
   .banner {
@@ -167,18 +184,51 @@ footer {
   }
 
   .tag-line {
-    font-size: 3em;
+    padding-top: 100px;
     word-spacing: 5px;
     letter-spacing: 2px;
+    font-size: 1.25em;
+    text-align: left;
+    padding-top: 0px;
+    margin-left: 65px;
+    font-weight: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+
+  .larger-displays {
+    display: block;
+    h1 {
+      margin-top: 0;
+      text-align: left;
+      font-size: 4em;
+      margin-left: 50px;
+      padding-top: 15px;
+    }
+  }
+
+  .nav-right {
+    float: right;
+    margin-top: -60px;
+    margin-right: 65px;
+    font-size: 1.25em;
+    display: inline;
+    a {
+      padding: 5px 25px;
+      border: 1px solid white;
+      border-radius: 5px;
+      }
+    a:hover {
+    background: red;
+    transition: all 0.5s ease;
+    }
+
   }
 
 
 
 
-
-
-}
-
+  }
 }
 
 

@@ -10,7 +10,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand" href="/">Picky</a>
+          <a class="navbar-brand" href="/">picky</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,8 +33,18 @@
   </div>
 
   <div class="banner">
+    <div class="larger-displays">
+      <h1><a href="/">picky</a></h1>
+    </div>
     <div>
-      <h3 class="tag-line">Exactly what you wanted.</h3>
+      <h3 class="tag-line">exactly what you wanted.</h3>
+    </div>
+    <div class="nav-right">
+      <% if user_signed_in? %>
+            <%= link_to 'LOG OUT', destroy_user_session_path, :method => :delete %>
+          <% else %>
+            <%= link_to 'LOG IN', "/users/sign_in" %>
+        <% end %>
     </div>
   </div>
 
