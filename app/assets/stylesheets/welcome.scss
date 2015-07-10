@@ -40,7 +40,8 @@
 .navbar-brand {
   font-size: 2em;
   float: none;
-  position: absolute;
+  line-height: 45px;
+  margin-right: 25px;
 }
 
 .navbar-default .navbar-brand {
@@ -73,6 +74,26 @@
   margin-right: 0;
 }
 
+.navbar-toggle {
+  float: left;
+  margin-left: 25px;
+}
+
+.navbar-nav {
+  background: #364045;
+  margin: 0;
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
+  transition: all 0.5s ease;
+}
+
 .tag-line {
   margin-top: 0;
   padding-top: 40px;
@@ -88,16 +109,50 @@
   padding-top: 60px;
 }
 
-.how-to {
+.how-to-title {
   height: 750px;
   background: #F8F8F8;
-  h3 {
+}
+
+.how-to-title > h3 {
     color: #99A4AE;
     text-align: center;
     padding-top: 70px;
+}
+
+.how-to-steps {
+  h3 {
+    text-align: center;
+    color: red;
+    margin-top: 65px;
+  }
+  p {
+    text-align: center;
+    font-size: 1.25em;
+    padding: 0 30px;
   }
 }
 
+footer {
+  text-align: center;
+  background: #404040;
+  color: white;
+  padding: 20px 0;
+  font-size: .75em;
+  a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    transition: all 0.5s ease;
+  }
+}
+
+.first-link {
+  margin-left: 10px;
+}
 
 
 }
