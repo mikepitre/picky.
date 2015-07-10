@@ -30,8 +30,16 @@
   margin-bottom: 0;
 }
 
+.navbar-header {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
 .navbar-brand {
   font-size: 2em;
+  float: none;
+  position: absolute;
 }
 
 .navbar-default .navbar-brand {
