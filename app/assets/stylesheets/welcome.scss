@@ -12,6 +12,7 @@
   background-size: cover;
   text-align: center;
   height: 345px;
+  margin-top: 50px;
   h4 {
   color: white;
   margin-bottom: 350px;
@@ -67,15 +68,34 @@
   background: #eee;
 }
 
+// remove on larger screens
+.navbar-toggle {
+  margin-right: 0;
+}
+
 .tag-line {
   margin-top: 0;
-  padding-top: 50px;
+  padding-top: 40px;
   color: white;
+}
+
+.below-banner {
+  height: 170px;
 }
 
 .explanation {
   text-align: center;
-  margin-top: 70px;
+  padding-top: 60px;
+}
+
+.how-to {
+  height: 750px;
+  background: #F8F8F8;
+  h3 {
+    color: #99A4AE;
+    text-align: center;
+    padding-top: 70px;
+  }
 }
 
 
