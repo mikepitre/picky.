@@ -13,12 +13,6 @@
   text-align: center;
   height: 345px;
   margin-top: 50px;
-  h4 {
-  color: white;
-  margin-bottom: 350px;
-  padding-top: 50px;
-  margin-top: 0;
-  }
   a {
     text-decoration: none;
     color: white;
@@ -109,6 +103,8 @@
 .explanation {
   text-align: center;
   padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .how-to-title {
@@ -156,6 +152,32 @@ footer {
   margin-left: 10px;
 }
 
+@media (min-width: 768px) {
+  .banner {
+  height: 510px;
+  margin-top: 50px;
+  }
+
+  .entire-navbar {
+    display: none;
+  }
+
+  .banner {
+    margin: 0;
+  }
+
+  .tag-line {
+    font-size: 3em;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+  }
+
+
+
+
+
+
+}
 
 }
 

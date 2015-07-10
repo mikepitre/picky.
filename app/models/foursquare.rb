@@ -17,7 +17,7 @@ class Foursquare < ActiveRecord::Base
   end
 
   def get_pick
-    response = HTTParty.get('https://api.foursquare.com/v2/venues/explore?near=austin&client_id=#{CLIENT_ID}&client_secret=#{CLIENT_SECRET}&v=#{today}')
+    response = HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=austin&client_id=#{CLIENT_ID}&client_secret=#{CLIENT_SECRET}&v=#{today}")
   end
 
 
