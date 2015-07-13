@@ -1,8 +1,8 @@
-<div class="welcome">
+<!-- <div class="welcome">
   <div class="entire-navbar">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
+
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -13,7 +13,7 @@
           <a class="navbar-brand" href="/">picky</a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
+
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
         </ul>
@@ -27,8 +27,8 @@
           <li><a href="users/sign_up">Sign Up</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      </div>
+    </div>
   </nav>
   </div>
 
@@ -71,4 +71,177 @@
 
 
 
-</div>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>picky</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">picky</a>
+      <ul class="right hide-on-med-and-down">
+        <% if user_signed_in? %>
+            <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+            <li><%= link_to 'Log In', "/users/sign_in" %></li>
+        <% end %>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <% if user_signed_in? %>
+            <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+            <li><%= link_to 'Log In', "/users/sign_in" %></li>
+        <% end %>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-1">exactly what you wanted.</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Picky helps you decide on the perfect restaurant, so you don't have to.</h5>
+        </div>
+        <div class="row center">
+          <a href="/selections/new" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><%= image_tag 'sandwhich.jpg' %></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">done_all</i></h2>
+            <h5 class="center">PICK YOUR FLAVORS</h5>
+
+            <p class="light">Choose from a selection of flavors and food styles to help us find the perfect restaurant for you.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">store</i></h2>
+            <h5 class="center">PICK YOUR SETTING</h5>
+
+            <p class="light">Want a restaurant with outdoor seating? Feel like having a drink? We've got you covered.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">room</i></h2>
+            <h5 class="center">GET OUR PICK</h5>
+
+            <p class="light">We find the ideal restaurant to satisfy all of your cravings.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><%= image_tag 'asianfood.jpg' %></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h2 class="center black-text"><i class="material-icons">query_builder</i></h2>
+          <h4>Save Time, Eat Great.</h4>
+          <p class="left-align light">Picky makes its easy to to find the best restaurant. We search through thousands of ratings and reviews to recommend the very best place for you. No more endless searching for the best place to go.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><%= image_tag 'meal.jpg' %></div>
+  </div>
+
+  <footer class="page-footer red lighten-1">
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Mike Pitre, 2015.
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../../dist/js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

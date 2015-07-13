@@ -1,236 +1,298 @@
 // * {
 //   border: solid 1px black;
 // }
-.welcome{
-* {
-  box-sizing: border-box;
+// .welcome{
+// * {
+//   box-sizing: border-box;
+// }
+
+// .banner {
+//   background-image: url('https://download.unsplash.com/photo-1428660386617-8d277e7deaf2');
+//   background-position: center;
+//   background-size: cover;
+//   text-align: center;
+//   height: 345px;
+//   margin-top: 50px;
+//   a {
+//     text-decoration: none;
+//     color: white;
+//   }
+
+// }
+
+// .navbar {
+//   background: white;
+//   margin-bottom: 0;
+// }
+
+// .navbar-header {
+//     float: none;
+//     text-align: center;
+//     width: 100%;
+// }
+
+// .navbar-brand {
+//   font-size: 2em;
+//   float: none;
+//   line-height: 45px;
+//   margin-right: 30px;
+// }
+
+// .navbar-default .navbar-brand {
+//   color: red;
+//   font-weight: bold;
+// }
+
+// .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+//   color: red;
+// }
+
+// .navbar-default .navbar-toggle {
+//   border: none;
+// }
+
+// .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+//   background: white;
+// }
+
+// .navbar-default .navbar-toggle .icon-bar {
+//   background-color: red;
+// }
+
+// .navbar-default .navbar-toggle:hover {
+//   background: #eee;
+//   transition: all 0.5s ease;
+// }
+
+// // remove on larger screens
+// .navbar-toggle {
+//   margin-right: 0;
+// }
+
+// .navbar-toggle {
+//   float: left;
+//   margin-left: 25px;
+// }
+
+// .navbar-nav {
+//   background: #364045;
+//   margin: 0;
+//   color: white;
+// }
+
+// .navbar-default .navbar-nav > li > a {
+//   color: white;
+//   border-bottom: solid 1px #4B5C63;
+// }
+
+// .navbar-default .navbar-nav > li > a:hover {
+//   color: red;
+//   transition: all 0.5s ease;
+// }
+
+// .tag-line {
+//   margin-top: 0;
+//   padding-top: 40px;
+//   color: white;
+// }
+
+// .below-banner {
+//   height: 170px;
+// }
+
+// .explanation {
+//   text-align: center;
+//   padding-top: 60px;
+//   padding-left: 30px;
+//   padding-right: 30px;
+// }
+
+// .how-to-title {
+//   height: 750px;
+//   background: #F8F8F8;
+// }
+
+// .how-to-title > h3 {
+//     color: #99A4AE;
+//     text-align: center;
+//     padding-top: 70px;
+// }
+
+// .how-to-steps {
+//   h3 {
+//     text-align: center;
+//     color: red;
+//     margin-top: 65px;
+//   }
+//   p {
+//     text-align: center;
+//     font-size: 1.25em;
+//     padding: 0 30px;
+//   }
+// }
+
+// footer {
+//   text-align: center;
+//   background: #404040;
+//   color: white;
+//   padding: 20px 0;
+//   font-size: .75em;
+//   a {
+//     color: white;
+//     margin: 0 5px;
+//     text-decoration: none;
+//   }
+//   a:hover {
+//     color: red;
+//     transition: all 0.5s ease;
+//   }
+// }
+
+// .first-footer-link {
+//   margin-left: 10px;
+// }
+
+// .larger-displays {
+//   display: none;
+// }
+
+// .nav-right {
+//   display: none;
+// }
+
+// @media (min-width: 468px) {
+//   .tag-line {
+//     font-size: 2.5em;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .banner {
+//   height: 510px;
+//   }
+
+//   .entire-navbar {
+//     display: none;
+//   }
+
+//   h3 {
+//     line-height: .8px;
+//   }
+
+//   .banner {
+//     margin: 0;
+//     background-position: 10% 40%;
+//   }
+
+//   .tag-line {
+//     padding-top: 100px;
+//     word-spacing: 5px;
+//     letter-spacing: 2px;
+//     font-size: 1.25em;
+//     text-align: left;
+//     padding-top: 0px;
+//     margin-left: 65px;
+//     font-weight: normal;
+//     letter-spacing: normal;
+//     word-spacing: normal;
+//   }
+
+//   .larger-displays {
+//     display: block;
+//     h1 {
+//       margin-top: 0;
+//       text-align: left;
+//       font-size: 4em;
+//       margin-left: 50px;
+//       padding-top: 15px;
+//     }
+//   }
+
+//   .nav-right {
+//     float: right;
+//     margin-top: -60px;
+//     margin-right: 65px;
+//     font-size: 1.25em;
+//     display: inline;
+//     a {
+//       padding: 5px 25px;
+//       border: 1px solid white;
+//       border-radius: 5px;
+//       }
+//     a:hover {
+//     background: red;
+//     transition: all 0.5s ease;
+//     }
+//   }
+
+
+
+
+//   }
+// }
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #ef5350;
 }
 
-.banner {
-  background-image: url('https://download.unsplash.com/photo-1428660386617-8d277e7deaf2');
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  height: 345px;
-  margin-top: 50px;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
+p {
+  line-height: 2rem;
 }
 
-.navbar {
-  background: white;
-  margin-bottom: 0;
+.button-collapse {
+  color: #ef5350;
 }
 
-.navbar-header {
-    float: none;
-    text-align: center;
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
     width: 100%;
+  }
+
+.header {
+  text-shadow: 2px 2px 2px #000;
+  // background: rgba(200, 200, 200, 0.5);
 }
 
-.navbar-brand {
-  font-size: 2em;
-  float: none;
-  line-height: 45px;
-  margin-right: 30px;
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-.navbar-default .navbar-brand {
-  color: red;
-  font-weight: bold;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: red;
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-.navbar-default .navbar-toggle {
-  border: none;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background: white;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: red;
-}
-
-.navbar-default .navbar-toggle:hover {
-  background: #eee;
-  transition: all 0.5s ease;
-}
-
-// remove on larger screens
-.navbar-toggle {
-  margin-right: 0;
-}
-
-.navbar-toggle {
-  float: left;
-  margin-left: 25px;
-}
-
-.navbar-nav {
-  background: #364045;
+footer.page-footer {
   margin: 0;
-  color: white;
 }
-
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  border-bottom: solid 1px #4B5C63;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: red;
-  transition: all 0.5s ease;
-}
-
-.tag-line {
-  margin-top: 0;
-  padding-top: 40px;
-  color: white;
-}
-
-.below-banner {
-  height: 170px;
-}
-
-.explanation {
-  text-align: center;
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.how-to-title {
-  height: 750px;
-  background: #F8F8F8;
-}
-
-.how-to-title > h3 {
-    color: #99A4AE;
-    text-align: center;
-    padding-top: 70px;
-}
-
-.how-to-steps {
-  h3 {
-    text-align: center;
-    color: red;
-    margin-top: 65px;
-  }
-  p {
-    text-align: center;
-    font-size: 1.25em;
-    padding: 0 30px;
-  }
-}
-
-footer {
-  text-align: center;
-  background: #404040;
-  color: white;
-  padding: 20px 0;
-  font-size: .75em;
-  a {
-    color: white;
-    margin: 0 5px;
-    text-decoration: none;
-  }
-  a:hover {
-    color: red;
-    transition: all 0.5s ease;
-  }
-}
-
-.first-footer-link {
-  margin-left: 10px;
-}
-
-.larger-displays {
-  display: none;
-}
-
-.nav-right {
-  display: none;
-}
-
-@media (min-width: 468px) {
-  .tag-line {
-    font-size: 2.5em;
-  }
-}
-
-@media (min-width: 768px) {
-  .banner {
-  height: 510px;
-  }
-
-  .entire-navbar {
-    display: none;
-  }
-
-  h3 {
-    line-height: .8px;
-  }
-
-  .banner {
-    margin: 0;
-  }
-
-  .tag-line {
-    padding-top: 100px;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    font-size: 1.25em;
-    text-align: left;
-    padding-top: 0px;
-    margin-left: 65px;
-    font-weight: normal;
-    letter-spacing: normal;
-    word-spacing: normal;
-  }
-
-  .larger-displays {
-    display: block;
-    h1 {
-      margin-top: 0;
-      text-align: left;
-      font-size: 4em;
-      margin-left: 50px;
-      padding-top: 15px;
-    }
-  }
-
-  .nav-right {
-    float: right;
-    margin-top: -60px;
-    margin-right: 65px;
-    font-size: 1.25em;
-    display: inline;
-    a {
-      padding: 5px 25px;
-      border: 1px solid white;
-      border-radius: 5px;
-      }
-    a:hover {
-    background: red;
-    transition: all 0.5s ease;
-    }
-
-  }
-
-
-
-
-  }
-}
-
 
 
 
