@@ -3,12 +3,8 @@
 @import 'materialize';
 //You need to now manually import every other scss file.
 @import 'welcome';
+@import 'selections';
 
 * {
   font-family: 'Magra', sans-serif;
 }
-
-// .container-fluid {
-//   padding-left: 0;
-//   padding-right: 0;
-// }

@@ -86,29 +86,6 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">picky</a>
-      <ul class="right hide-on-med-and-down">
-        <% if user_signed_in? %>
-            <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
-          <% else %>
-            <li><%= link_to 'Log In', "/users/sign_in" %></li>
-        <% end %>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="selections/new">Get a Pick!</a></li>
-        <li><a href="users/sign_up">Sign Up</a></li>
-        <% if user_signed_in? %>
-            <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
-          <% else %>
-            <li><%= link_to 'Log In', "/users/sign_in" %></li>
-        <% end %>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -116,7 +93,7 @@
         <br><br>
         <h1 class="header center white-text text-lighten-1">exactly what you wanted.</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Picky helps you decide on the perfect restaurant, so you don't have to.</h5>
+          <!-- <h5 class="header col s12 light">Picky helps you decide on the perfect restaurant, so you don't have to.</h5> -->
         </div>
         <div class="row center">
           <a href="/selections/new" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Get Started</a>
@@ -125,7 +102,7 @@
 
       </div>
     </div>
-    <div class="parallax"><%= image_tag 'sandwhich.jpg' %></div>
+    <div class="parallax"><%= image_tag 'lunch.jpg' %></div>
   </div>
 
 
@@ -137,7 +114,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center black-text"><i class="material-icons">done_all</i></h2>
-            <h5 class="center">PICK YOUR FLAVORS</h5>
+            <h5 class="center red-text">PICK YOUR FLAVORS</h5>
 
             <p class="light">Choose from a selection of flavors and food styles to help us find the perfect restaurant for you.</p>
           </div>
@@ -146,7 +123,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center black-text"><i class="material-icons">store</i></h2>
-            <h5 class="center">PICK YOUR SETTING</h5>
+            <h5 class="center red-text">PICK YOUR SETTING</h5>
 
             <p class="light">Want a restaurant with outdoor seating? Feel like having a drink? We've got you covered.</p>
           </div>
@@ -155,7 +132,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center black-text"><i class="material-icons">room</i></h2>
-            <h5 class="center">GET OUR PICK</h5>
+            <h5 class="center red-text">GET OUR PICK</h5>
 
             <p class="light">We find the ideal restaurant to satisfy all of your cravings.</p>
           </div>
@@ -170,11 +147,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+          <h4 class="header col s12 light">Picky helps you decide on the perfect restaurant, so you don't have to.</h4>
         </div>
       </div>
     </div>
-    <div class="parallax"><%= image_tag 'asianfood.jpg' %></div>
+    <div class="parallax"><%= image_tag 'burgers1.jpg' %></div>
   </div>
 
   <div class="container">
@@ -183,7 +160,7 @@
       <div class="row">
         <div class="col s12 center">
           <h2 class="center black-text"><i class="material-icons">query_builder</i></h2>
-          <h4>Save Time, Eat Great.</h4>
+          <h4>SAVE TIME, EAT GREAT.</h4>
           <p class="left-align light">Picky makes its easy to to find the ideal restaurant. We search through thousands of ratings and reviews to recommend the very best place for you. No more endless searching for the best place to go.</p>
         </div>
       </div>
@@ -196,11 +173,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
+          <h4 class="header col s12 light">Where will you eat next?</h4>
         </div>
       </div>
     </div>
-    <div class="parallax"><%= image_tag 'meal.jpg' %></div>
+    <div class="parallax"><%= image_tag 'italian.jpg' %></div>
   </div>
 
   <footer class="page-footer red lighten-1">
