@@ -11,86 +11,100 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :healthy %>
-    <%= f.check_box :healthy %>
+  <h5>What are you in the mood for?</h5>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.check_box :healthy %>
+      <%= f.label :healthy %>
+    </div>
+    <div class="field col s6">
+      <%= f.check_box :spicy %>
+      <%= f.label :spicy %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :spicy %>
-    <%= f.check_box :spicy %>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.check_box :cheesy %>
+      <%= f.label :cheesy %>
+    </div>
+    <div class="field col s6">
+      <%= f.check_box :sandwiches %>
+      <%= f.label :sandwiches %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :cheesy %>
-    <%= f.check_box :cheesy %>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.check_box :tacos %>
+      <%= f.label :tacos %>
+    </div>
+    <div class="field col s6">
+      <%= f.check_box :asian %>
+      <%= f.label :asian %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :sandwiches %>
-    <%= f.check_box :sandwiches %>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.check_box :fusion %>
+      <%= f.label :fusion %>
+    </div>
+    <div class="field col s6">
+      <%= f.check_box :bbq %>
+      <%= f.label :bbq, "BBQ" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :tacos %>
-    <%= f.check_box :tacos %>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.check_box :dessert %>
+      <%= f.label :dessert %>
+    </div>
+    <div class="field col s6">
+      <%= f.check_box :burgers %>
+      <%= f.label :burgers %>
   </div>
-  <div class="field">
-    <%= f.label :asian %>
-    <%= f.check_box :asian %>
   </div>
-  <div class="field">
-    <%= f.label :fusion %>
-    <%= f.check_box :fusion %>
+  <div class="row">
+    <div class="field col s6">
+      <%= f.check_box :fried %>
+      <%= f.label :fried %>
+    </div>
+    <div class="field col s6">
+      <%= f.check_box :seafood %>
+      <%= f.label :seafood %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :bbq %>
-    <%= f.check_box :bbq %>
+
+  <h5>What should the setting be like?</h5>
+  <div class="row">
+    <div class="input-field col s6">
+      <i class="material-icons prefix">credit_card</i>
+      <%= f.label :price_range %>
+      <%= f.text_field :price %>
+    </div>
+    <div class="input-field col s6">
+      <i class="material-icons prefix">my_location</i>
+      <%= f.label :distance_from_you %>
+      <%= f.text_field :distance %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :dessert %>
-    <%= f.check_box :dessert %>
-  </div>
-  <div class="field">
-    <%= f.label :burgers %>
-    <%= f.check_box :burgers %>
-  </div>
-  <div class="field">
-    <%= f.label :fried %>
-    <%= f.check_box :fried %>
-  </div>
-  <div class="field">
-    <%= f.label :seafood %>
-    <%= f.check_box :seafood %>
-  </div>
-  <div class="field">
-    <%= f.label :price %>
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :distance %>
-    <%= f.text_field :distance %>
-  </div>
-  <div class="field">
-    <%= f.label :take_out %>
-    <%= f.check_box :take_out %>
-  </div>
-  <div class="field">
-    <%= f.label :outdoor_seating %>
-    <%= f.check_box :outdoor_seating %>
-  </div>
-  <div class="field">
-    <%= f.label :serves_alcohol %>
-    <%= f.check_box :serves_alcohol %>
+  <div class="row">
+    <div class="field col s4">
+      <%= f.check_box :take_out %>
+      <%= f.label :take_out %>
+    </div>
+    <div class="field col s4">
+      <%= f.check_box :outdoor_seating %>
+      <%= f.label :outdoor_seating %>
+    </div>
+    <div class="field col s4">
+      <%= f.check_box :serves_alcohol %>
+      <%= f.label :serves_alcohol %>
+    </div>
   </div>
   <!-- <div class="field">
     <%= f.label :meal_id %>
     <%= f.text_field :meal_id %>
   </div> -->
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Get Pick!", class: "waves-effect waves-light btn" %>
   </div>
 <% end %>
-
-<form action="submit">
-    <p>
-      <input type="checkbox" id=":serves_alcohol" />
-      <label for=":serves_alcohol">Serves Alcohol</label>
-    </p>
-  </form>
