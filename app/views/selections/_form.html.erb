@@ -77,12 +77,12 @@
   <div class="row">
     <div class="input-field col s6">
       <i class="material-icons prefix">credit_card</i>
-      <%= f.label :price ," Price (1-4)" %>
+      <%= f.label :price ," Price (1-4)" %><br>
       <%= f.text_field :price %>
     </div>
     <div class="input-field col s6">
       <i class="material-icons prefix">my_location</i>
-      <%= f.label :distance_from_you, "Distance from you in miles (1, 5 or 10)" %>
+      <%= f.label :distance_from_you %><br>
       <%= f.text_field :distance %>
     </div>
   </div>
@@ -105,7 +105,7 @@
     <%= f.text_field :meal_id %>
   </div> -->
   <div class="row">
-    <div class="actions center">
+    <div class="actions centered">
       <button class="btn-large waves-effect waves-light" type="submit" name="action">Get Pick!</button>
     </div>
   </div>
