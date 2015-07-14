@@ -23,5 +23,4 @@ class Foursquare < ActiveRecord::Base
     get_pick(choices.compact.join('+'))
   end
 
-
 end

@@ -1,4 +1,4 @@
-
+<!--
 
 <p>
   <strong>Healthy:</strong>
@@ -90,5 +90,7 @@
   <%= @selection.meal %>
 </p>
 
-<%= link_to 'Edit', edit_selection_path(@selection) %> |
-<%= link_to 'Back', selections_path %>
+<%= link_to 'Selections', selections_path %>
+ -->
+
+<%= Foursquare.new.pick_from_selection(Selection.last)['response']['groups'].first['items'].map { |x| x['venue']['name'] }.uniq %>
