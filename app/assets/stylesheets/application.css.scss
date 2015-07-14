@@ -16,10 +16,24 @@
 
 /* label underline focus color */
 .input-field input[type=text]:focus {
- border-bottom: 1px solid red;
- box-shadow: 0 1px 0 0 red;
+ border-bottom: 1px solid #ef5350;
+ box-shadow: 0 1px 0 0 #ef5350;
 }
 
-h5 {
-  padding: 20px 0;
+#log-in-heading {
+  margin: 50px;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+  color: #ef5350;
+}
+
+input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #ef5350;
+    box-shadow: 0 1px 0 0 #ef5350;
 }
