@@ -1,29 +1,40 @@
-<h2>Sign up</h2>
+<div class="container">
+<h4 class="log-in-heading">Sign Up</h4>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <div class="input-field">
+    <i class="material-icons prefix">account_circle</i>
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="field">
+  <div class="input-field">
+    <i class="material-icons prefix">vpn_key</i>
     <%= f.label :password %>
-    <% if @minimum_password_length %>
+   <!--  <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
+    <% end %><br /> -->
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="field">
+  <div class="input-field">
+    <i class="material-icons prefix">vpn_key</i>
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="row">
+    <div class="actions center">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Sign Up</button>
+    </div>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+  <div class="row">
+    <div class="center">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

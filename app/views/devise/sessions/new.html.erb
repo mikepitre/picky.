@@ -1,6 +1,6 @@
 
 <div class="container">
-<h4 id="log-in-heading" class="center">Log In</h4>
+<h4 class="log-in-heading">Log In</h4>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="input-field col s12">
@@ -23,14 +23,14 @@
   <% end -%>
 
   <div class="row">
-    <div class="actions col sm1 offset-s4 offset-m5">
+    <div class="actions center">
       <button class="btn waves-effect waves-light" type="submit" name="action">Log In</button>
     </div>
   </div>
 <% end %>
 
   <div class="row">
-    <div class="col sm1 offset-s4 offset-m5">
+    <div class="center">
       <%= render "devise/shared/links" %>
     </div>
   </div>
