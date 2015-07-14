@@ -2,3 +2,14 @@
   border-right: 2px solid #ef5350;
   border-bottom: 2px solid #ef5350;
 }
+
+.btn, .btn-large {
+  @extend .red, .lighten-1;
+  &:hover {
+    @extend .red, .lighten-4;
+  }
+}
+
+.btn, .bbtn-large {
+  margin-top: 25px;
+}
