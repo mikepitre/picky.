@@ -34,6 +34,10 @@ p {
   text-shadow: 2px 2px 2px #000;
 }
 
+.shadow {
+  background: rgba(50, 50, 50, 0.5)
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
