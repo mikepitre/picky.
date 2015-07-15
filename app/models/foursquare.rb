@@ -32,7 +32,7 @@ class Foursquare < ActiveRecord::Base
   end
 
   def self.pick_address
-    venue_info.map { |x| x['venue']['location']['address']}.first
+    venue_info.map { |x| x['venue']['location']['formattedAddress']}.first[0]
   end
 
   def self.pick_city_and_zip
@@ -47,7 +47,13 @@ class Foursquare < ActiveRecord::Base
     venue_info.map { |x| x['venue']['url']}.first
   end
 
+  def self.pick_price
+    venue_info.map { |x| x['venue']['price']}.first['tier']
+  end
 
+  def self.pick_rating
+    venue_info.map { |x| x['venue']['rating']}.first
+  end
 
 
 end
