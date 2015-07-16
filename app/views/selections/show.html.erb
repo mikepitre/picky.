@@ -1,10 +1,15 @@
+<div class="container">
 
 <div>
-  <%= Foursquare.pick_name %></br>
-  <%= Foursquare.pick_address %></br>
-  <%= Foursquare.pick_city_and_zip %></br>
-  <%= Foursquare.pick_phone_number %></br>
-  <%= link_to Foursquare.pick_website, Foursquare.pick_website %>
+  <div class="address">
+    <%= Foursquare.pick_name %></br>
+    <%= Foursquare.pick_address %></br>
+    <%= Foursquare.pick_city_and_zip %></br>
+  </div>
+  <div class="contact">
+    <i class="material-icons">phone</i><%= Foursquare.pick_phone_number %></br>
+    <i class="material-icons">web</i><%= link_to Foursquare.pick_website, Foursquare.pick_website %>
+  </div>
 </div>
 
 </br>
@@ -12,4 +17,6 @@
 <div>
   Price: <%= Foursquare.pick_price %></br>
   Rating: <%= Foursquare.pick_rating %>
+</div>
+
 </div>
