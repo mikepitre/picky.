@@ -18,3 +18,11 @@
 //= require components
 //= require materialize-sprockets
 //= require_tree .
+
+$(document).ready(function() {
+    $('select').material_select();
+});
+
+navigator.geolocation.getCurrentPosition(function(position) {
+  lat = position.coords.latitude; long = position.coords.longitude; $('#lat-input').val(lat); $('#long-input').val(long);
+});

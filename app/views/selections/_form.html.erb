@@ -83,7 +83,7 @@
     <div class="input-field col s11 m6">
       <i class="material-icons prefix">my_location</i>
       <%= f.label :distance, "Miles from You" %>
-      <%= f.text_field :distance %>
+      <%= f.select :distance, [ ["< 1 Mile",1], ["< 5 Miles",5], ["< 10 Miles", 10] ] %>
     </div>
   </div>
   <div class="row">
@@ -99,6 +99,10 @@
       <%= f.check_box :serves_alcohol %>
       <%= f.label :serves_alcohol %>
     </div>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :lat,  id: 'lat-input' %>
+    <%= f.hidden_field :long, id: 'long-input' %>
   </div>
   <!-- <div class="field">
     <%= f.label :meal_id %>
