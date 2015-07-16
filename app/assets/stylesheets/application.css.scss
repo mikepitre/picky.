@@ -41,3 +41,7 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
 select {
   display: normal;
 }
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #ef5350;
+}
