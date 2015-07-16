@@ -20,6 +20,10 @@ class Foursquare < ActiveRecord::Base
       attribute[0] if attribute[1] == true
     end
 
+    if selection.price
+      choices = choices + ["&price=#{selection.price}"]
+    end
+
     get_pick(choices.compact.join('+'))
   end
 
