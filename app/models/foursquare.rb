@@ -20,9 +20,13 @@ class Foursquare < ActiveRecord::Base
       attribute[0] if attribute[1] == true
     end
 
-    if selection.price
-      choices = choices + ["&price=#{selection.price}"]
-    end
+    # if selection.price
+    #   choices += ["&price=#{selection.price}"]
+    # end
+
+    # if selection.distance
+    #   choices += ["&radius=#{selection.distance.to_f/0.00062137}"]
+    # end
 
     get_pick(choices.compact.join('+'))
   end
