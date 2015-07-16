@@ -10,6 +10,7 @@ class SelectionsController < ApplicationController
   # GET /selections/1
   # GET /selections/1.json
   def show
+    @foursquare = Foursquare.pick_from_selection(Selection.find(params[:id]))
   end
 
   # GET /selections/new
