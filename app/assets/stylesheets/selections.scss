@@ -23,4 +23,16 @@ h5 {
   margin-top: 20px;
 }
 
+iframe {
+  margin-bottom: 40px;
+}
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
