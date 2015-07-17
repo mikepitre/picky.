@@ -34,7 +34,7 @@ class Foursquare < ActiveRecord::Base
       choices += ["&radius=#{selection.distance.to_f/0.00062137}"]
     end
 
-    get_pick(choices.compact.join("+").gsub(/serves_alcohol/,"drinks").gsub(/outdoor_seating/,"outdoor+seating").gsub(/take_out/, "take+out"))
+    get_pick(choices.compact.join("+").gsub(/serves_alcohol/,"drinks+beer").gsub(/outdoor_seating/,"outdoor+seating").gsub(/take_out/, "take+out"))
   end
 
   def response

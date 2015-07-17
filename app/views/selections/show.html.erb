@@ -10,7 +10,10 @@
       <%= @foursquare.pick_city_and_zip %></br>
     </div>
     <div class="contact col s6">
-      <i class="material-icons">phone</i><%= @foursquare.pick_phone_number %></br>
+    <% if @foursquare.pick_phone_number %>
+      <i class="material-icons">phone</i><%= @foursquare.pick_phone_number %>
+      <% end %>
+      </br>
       <% if @foursquare.pick_website %>
       <%= link_to @foursquare.pick_website, @foursquare.pick_website %>
       <% else %>
@@ -38,7 +41,7 @@
   width="80%"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=<%=ENV['google_maps_api_key']%>&q=<%= @foursquare.pick_name+"+"+@foursquare.pick_address.gsub(/\([^)]*\)/,"")%>" allowfullscreen>
+  src="https://www.google.com/maps/embed/v1/place?key=<%=ENV['google_maps_api_key']%>&q=<%= @foursquare.pick_name.gsub(/\&/,"")+"+"+@foursquare.pick_address.gsub(/\([^)]*\)/,"")%>" allowfullscreen>
 </iframe>
 <% end %>
 </div>
