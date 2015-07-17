@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container pick-show-page">
 <% if @foursquare.results_count.zero? %>
    <%= @foursquare.response['warning']['text'] %>
 <% else %>
@@ -28,13 +28,23 @@
 <% end %>
 </div>
 
-<div class="map">
+<div class="row">
+<div class="google-maps centered">
   <iframe
-  width="600"
+  width="80%"
   height="450"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=<%=ENV['google_maps_api_key']%>&q=<%= @foursquare.pick_name%>" allowfullscreen>
 </iframe>
 </div>
+</div>
+
+<footer class="page-footer red lighten-1">
+<div class="footer-copyright">
+      <div class="container">
+      Made by Mike Pitre, 2015.
+      </div>
+    </div>
+  </footer>
 
 
