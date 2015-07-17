@@ -70,6 +70,6 @@ class SelectionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def selection_params
-      params.require(:selection).permit(:healthy, :spicy, :cheese, :sandwiches, :tacos, :asian, :fusion, :bbq, :dessert, :burgers, :fried, :seafood, :price, :distance, :take_out, :outdoor_seating, :serves_alcohol, :meal_id)
+      params.require(:selection).permit(:healthy, :spicy, :cheese, :sandwiches, :tacos, :asian, :fusion, :bbq, :dessert, :burgers, :fried, :seafood, :price, :distance, :take_out, :outdoor_seating, :serves_alcohol, :meal_id, :lat, :long)
     end
 end

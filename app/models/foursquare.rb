@@ -18,7 +18,7 @@ class Foursquare < ActiveRecord::Base
   end
 
   def self.get_pick(query)
-    self.new(HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=austin&openNow=1&query=#{query}&client_id=#{CLIENT_ID}&client_secret=#{CLIENT_SECRET}&v=#{today}"))
+    self.new(HTTParty.get("https://api.foursquare.com/v2/venues/explore?openNow=1&query=#{query}&client_id=#{CLIENT_ID}&client_secret=#{CLIENT_SECRET}&v=#{today}"))
   end
 
   def self.pick_from_selection(selection)
@@ -33,6 +33,8 @@ class Foursquare < ActiveRecord::Base
     if selection.distance
       choices += ["&radius=#{selection.distance.to_f/0.00062137}"]
     end
+
+    choices += ["&ll=#{selection.lat},#{selection.long}"]
 
     get_pick(choices.compact.join("+").gsub(/serves_alcohol/,"drinks+beer").gsub(/outdoor_seating/,"outdoor+seating").gsub(/take_out/, "take+out"))
   end
@@ -78,10 +80,6 @@ class Foursquare < ActiveRecord::Base
   def pick_rating
     venue_info.map { |x| x['venue']['rating']}.first
   end
-
-  # def pick_map
-  #   self.new(HTTParty.get
-  # end
 
   def results_count
     @response['response']['totalResults']

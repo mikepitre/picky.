@@ -24,5 +24,5 @@ $(document).ready(function() {
 });
 
 navigator.geolocation.getCurrentPosition(function(position) {
-  lat = position.coords.latitude; long = position.coords.longitude; $('#lat-input').val(lat); $('#long-input').val(long);
+  lat = position.coords.latitude; lng = position.coords.longitude; $('#lat-input').val(lat); $('#long-input').val(lng);
 });
