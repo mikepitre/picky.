@@ -4,20 +4,17 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="input-field validate" id="email" type="email">
-    <i class="material-icons prefix">account_circle</i>
-    <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    <div class="input-field validate col s12" id="email" type="email">
+      <i class="material-icons prefix">account_circle</i>
+      <%= f.label :email %>
+      <%= f.email_field :email, autofocus: true %>
+    </div>
 
-  <div class="input-field">
-    <i class="material-icons prefix">vpn_key</i>
-    <%= f.label :password %>
-   <!--  <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %> -->
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <div class="input-field">
+      <i class="material-icons prefix">vpn_key</i>
+      <%= f.label :password, "Password (8 Characters Minimum)" %>
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
 
   <div class="input-field">
     <i class="material-icons prefix">vpn_key</i>

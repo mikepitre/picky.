@@ -10,9 +10,8 @@
   }
 }
 
-.btn, .bbtn-large {
+.btn, .btn-large {
   margin-top: 25px;
-  margin-bottom: 40px;
 }
 
 h5 {
@@ -36,3 +35,7 @@ body {
 main {
     flex: 1 0 auto;
   }
+
+.get-pick-btn {
+  margin-bottom: 40px;
+}
