@@ -10,7 +10,10 @@
     </div>
     <div class="contact col s6">
       <i class="material-icons">phone</i><%= @foursquare.pick_phone_number %></br>
-      <i class="material-icons">web</i><%= link_to @foursquare.pick_website, @foursquare.pick_website %>
+      <% if @foursquare.pick_website %>
+      <%= link_to @foursquare.pick_website, @foursquare.pick_website %>
+      <% else %>
+      <% end %>
     </div>
   </div>
 

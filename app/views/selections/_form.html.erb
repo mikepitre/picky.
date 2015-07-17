@@ -76,16 +76,16 @@
   <h5>What should the setting be like?</h5>
   <div class="row">
     <div class="input-field col s11 m6">
-      <%= f.select :price, [ ["Choose your price tier", 1],["$", 1], ["$$",2], ["$$$",3], ["$$$$", 4] ]  %>
+      <%= f.select :price, [ ["Choose your price tier", 1],["$", 1], ["$$", 2], ["$$$", 3], ["$$$$", 4] ]  %>
       <%= f.label :price, "Price" %>
     </div>
     <div class="input-field col s11 m6">
       <!-- <i class="material-icons prefix">my_location</i> -->
       <%= f.select :distance, [ ["Choose your distance", 10], ["< 1 Mile Away",1], ["< 5 Miles Away",5], ["< 10 Miles Away", 10] ] %>
-      <%= f.label :distance, "Miles from You" %>
+      <%= f.label :distance, "Distance from You" %>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="bottom-options">
     <div class="field col s4">
       <%= f.check_box :take_out %>
       <%= f.label :take_out %>
