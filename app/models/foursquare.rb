@@ -6,6 +6,8 @@ class Foursquare < ActiveRecord::Base
   CLIENT_ID = ENV['foursquare_client_id']
   CLIENT_SECRET = ENV['foursquare_client_secret']
 
+  google_maps_api_key = ENV['google_maps_api_key']
+
   def initialize(data)
     @response = data
     puts data
@@ -76,6 +78,10 @@ class Foursquare < ActiveRecord::Base
   def pick_rating
     venue_info.map { |x| x['venue']['rating']}.first
   end
+
+  # def pick_map
+  #   self.new(HTTParty.get
+  # end
 
   def results_count
     @response['response']['totalResults']
