@@ -28,8 +28,6 @@ class Foursquare < ActiveRecord::Base
 
     if selection.price
       choices += ["&price=#{selection.price}"]
-    else
-      choices += ["&price=1,2,3,4"]
     end
 
     if selection.distance
