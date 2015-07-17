@@ -103,6 +103,16 @@
     <%= f.hidden_field :lat,  id: 'lat-input' %>
     <%= f.hidden_field :long, id: 'long-input' %>
   </div>
+  <div id='zip'>
+    <h5>Where are you?</h5>
+    <div class="row">
+        <div class="input-field col 4 centered">
+          <%= f.label :zip_code, "Zip Code" %>
+          <%= f.text_field :zip_code %>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="actions centered">
       <button class="btn-large waves-effect waves-light get-pick-btn" type="submit" name="action">Get Pick!</button>
