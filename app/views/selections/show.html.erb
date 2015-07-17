@@ -37,11 +37,17 @@
   <% if @foursquare.results_count.zero? %>
     <% '' %>
   <% else %>
-  <iframe
+  <!-- <iframe
   width="80%"
   height="450"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=<%=ENV['google_maps_api_key']%>&q=<%= @foursquare.pick_name.gsub(/\&/,"")+"+"+@foursquare.pick_address.gsub(/\([^)]*\)/,"")%>" allowfullscreen>
+</iframe> -->
+<iframe
+  width="80%"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/directions?key=<%=ENV['google_maps_api_key']%>&origin=<%=@selection.lat+","+@selection.long %>&destination=<%= @foursquare.pick_name.gsub(/\&/,"")+"+"+@foursquare.pick_address.gsub(/\([^)]*\)/,"")%>" allowfullscreen>
 </iframe>
 <% end %>
 </div>
