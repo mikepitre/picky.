@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="address col s10 offset-s2 m5 offset-m1">
+    <div class="address col s10 offset-s2 m4 offset-m2 l4 offset-l2">
       <i class="material-icons">location_on</i><%= @foursquare.pick_name %></br>
       <div class="margin-right-34"><%= @foursquare.pick_address.gsub(/\([^)]*\)/,"") %></div></br>
       <div class="margin-right-34"><%= @foursquare.pick_city_and_zip %></div></br>
@@ -18,7 +18,7 @@
         <i class="material-icons">schedule</i><%= @foursquare.pick_hours %>
       <% end %>
     </div>
-    <div class="contact col s10 offset-s2 m5 offset-m1">
+    <div class="contact col s10 offset-s2 m5 offset-m1 l5 offset-l1">
       <% if @foursquare.pick_phone_number %>
         <i class="material-icons">phone</i><%= @foursquare.pick_phone_number %></br>
       <% end %>
