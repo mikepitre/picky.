@@ -3,7 +3,7 @@
 <% if @selection.lat == "" && @selection.zip_code == "" && @foursquare.results_count == nil %>
   <div class="row">
     <div class="col s12 centered">
-      <p>We can't find your location.<br> Please go back and provide your zip code.</p>
+      <p>We couldn't find your location.<br> Please go back and provide your zip code.</p>
     </div>
   </div>
 <% elsif @foursquare.results_count.zero? %>
