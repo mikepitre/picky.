@@ -86,7 +86,11 @@ class Foursquare < ActiveRecord::Base
   end
 
   def pick_hours
-    venue_info.map { |x| x['venue']['hours']}.first['status']
+    if venue_info.map { |x| x['venue']['hours']}.first == nil
+      ''
+    else
+      venue_info.map { |x| x['venue']['hours']}.first['status']
+    end
   end
 
   def results_count
