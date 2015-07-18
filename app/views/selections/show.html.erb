@@ -1,6 +1,12 @@
 <main>
 <div class="container pick-show-page">
-<% if @foursquare.results_count.zero? %>
+<% if @selection.lat == "" && @selection.zip_code == "" && @foursquare.results_count == nil %>
+  <div class="row">
+    <div class="col s12 centered">
+      <p>We can't find your location.<br> Please go back and provide your zip code.<br> Thank You!</p>
+    </div>
+  </div>
+<% elsif @foursquare.results_count.zero? %>
    <%= @foursquare.response['warning']['text'] %>
 <% else %>
   <div class="row">
@@ -35,7 +41,7 @@
 
 <div class="row">
 <div class="google-maps centered">
-  <% if @foursquare.results_count.zero? %>
+  <% if @foursquare.results_count == nil || @foursquare.results_count.zero? %>
     <% '' %>
   <% elsif @selection.lat == ""%>
     <iframe
