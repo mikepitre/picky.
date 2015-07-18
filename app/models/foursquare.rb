@@ -26,21 +26,21 @@ class Foursquare < ActiveRecord::Base
       attribute[0] if attribute[1] == true
     end
 
-    if selection.price
+    if selection.price != ""
       choices += ["&price=#{selection.price}"]
     end
 
-    if selection.distance
+    if selection.distance != ""
       choices += ["&radius=#{selection.distance.to_f/0.00062137}"]
     end
 
-    if selection.lat
+    if selection.lat != ""
       choices += ["&ll=#{selection.lat},#{selection.long}"]
     else
       choices += ["&near=#{selection.zip_code}"]
     end
 
-    get_pick(choices.compact.join("+").gsub(/serves_alcohol/,"beer").gsub(/outdoor_seating/,"outdoor+seating").gsub(/take_out/, "good+for+a+quick+meal"))
+    get_pick(choices.compact.join("+").gsub(/serves_alcohol/,"drinks").gsub(/outdoor_seating/,"outdoor+seating").gsub(/take_out/, "good+for+a+quick+meal"))
   end
 
   def response
