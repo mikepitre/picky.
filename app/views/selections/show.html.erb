@@ -3,11 +3,11 @@
 <% if @selection.lat == "" && @selection.zip_code == "" && @foursquare.results_count == nil %>
   <div class="row">
     <div class="col s12 centered">
-      <p>We can't find your location.<br> Please go back and provide your zip code.<br> Thank You!</p>
+      <p>We can't find your location.<br> Please go back and provide your zip code.</p>
     </div>
   </div>
 <% elsif @foursquare.results_count.zero? %>
-   <%= @foursquare.response['warning']['text'] %>
+   We couldn't find any restaurants that met your criteria. Try something more general, reset your filters, or expand the search area.
 <% else %>
   <div class="row">
     <div class="our-pick-header centered">
