@@ -10,18 +10,18 @@
     </div>
   </div>
   <div class="row">
-    <div class="address col s12">
+    <div class="address col s4">
       <i class="material-icons">location_on</i><%= @foursquare.pick_name %></br>
       <div class="margin-right-34"><%= @foursquare.pick_address.gsub(/\([^)]*\)/,"") %></div></br>
       <div class="margin-right-34"><%= @foursquare.pick_city_and_zip %></div></br>
     </div>
-    <div class="contact col s12">
+    <div class="contact col s8">
     <% if @foursquare.pick_phone_number %>
       <i class="material-icons">phone</i><%= @foursquare.pick_phone_number %>
       <% end %>
       </br>
       <% if @foursquare.pick_website %>
-      <i class="material-icons">web</i><%= link_to @foursquare.pick_website, @foursquare.pick_website %>
+      <i class="material-icons">web</i><%= link_to @foursquare.pick_website.gsub(/(?:f|ht)tps?:\/[^\s]/,""), @foursquare.pick_website %>
       <% else %>
       <% end %>
       </br>
