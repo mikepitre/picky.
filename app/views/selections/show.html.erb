@@ -50,14 +50,14 @@
   <% elsif @selection.lat == ""%>
     <iframe
     width="80%"
-    height="350"
+    height="400"
     frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/place?key=<%=ENV['google_maps_api_key']%>&q=<%= @foursquare.pick_name.gsub(/\&/,"")+"+"+@foursquare.pick_address.gsub(/\([^)]*\)/,"")+"+"+@foursquare.pick_city_and_zip%>" allowfullscreen>
     </iframe>
   <% else %>
     <iframe
       width="80%"
-      height="350"
+      height="400"
       frameborder="0" style="border:0"
       src="https://www.google.com/maps/embed/v1/directions?key=<%=ENV['google_maps_api_key']%>&origin=<%=@selection.lat+","+@selection.long %>&destination=<%= @foursquare.pick_name.gsub(/\&/,"")+"+"+@foursquare.pick_address.gsub(/\([^)]*\)/,"")+"+"+@foursquare.pick_city_and_zip%>" allowfullscreen>
     </iframe>
