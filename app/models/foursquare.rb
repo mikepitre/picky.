@@ -85,6 +85,10 @@ class Foursquare < ActiveRecord::Base
     venue_info.map { |x| x['venue']['rating']}.first
   end
 
+  def pick_hours
+    venue_info.map { |x| x['venue']['hours']}.first['status']
+  end
+
   def results_count
     @response['response']['totalResults']
   end
