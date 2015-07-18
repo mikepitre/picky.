@@ -4,29 +4,30 @@
    <%= @foursquare.response['warning']['text'] %>
 <% else %>
   <div class="row">
-    <div class="address col s6">
-      <%= @foursquare.pick_name %></br>
-      <%= @foursquare.pick_address.gsub(/\([^)]*\)/,"") %></br>
-      <%= @foursquare.pick_city_and_zip %></br>
+    <div class="our-pick-header centered">
+      <h5>Our pick for you is:</h5>
+      <h3><%= @foursquare.pick_name %></h3>
     </div>
-    <div class="contact col s6">
+  </div>
+  <div class="row">
+    <div class="address col s12">
+      <i class="material-icons">location_on</i><%= @foursquare.pick_name %></br>
+      <div class="margin-right-34"><%= @foursquare.pick_address.gsub(/\([^)]*\)/,"") %></div></br>
+      <div class="margin-right-34"><%= @foursquare.pick_city_and_zip %></div></br>
+    </div>
+    <div class="contact col s12">
     <% if @foursquare.pick_phone_number %>
       <i class="material-icons">phone</i><%= @foursquare.pick_phone_number %>
       <% end %>
       </br>
       <% if @foursquare.pick_website %>
-      <%= link_to @foursquare.pick_website, @foursquare.pick_website %>
+      <i class="material-icons">web</i><%= link_to @foursquare.pick_website, @foursquare.pick_website %>
       <% else %>
       <% end %>
-    </div>
-  </div>
-
-  </br>
-
-  <div class="row">
-    <div class="info col s6">
-      Price Tier: <%= @foursquare.pick_price %></br>
-      Rating: <%= @foursquare.pick_rating %>
+      </br>
+      <i class="material-icons">credit_card</i>Price Tier: <%= @foursquare.pick_price %>
+      </br>
+      <i class="material-icons">stars</i>Rating: <%= @foursquare.pick_rating %>
     </div>
   </div>
 <% end %>
