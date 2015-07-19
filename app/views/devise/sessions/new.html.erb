@@ -2,8 +2,8 @@
 <h4 class="log-in-heading">Log In</h4>
 
 <% if alert %>
-  <div class="alert alert-danger centered error-messages row" role="alert">
-    <button type="button" class="btn no-upcase" data-dismiss="alert">
+  <div class="alert alert-danger centered error-messages-container row" role="alert">
+    <button type="button" class="error-messages" data-dismiss="alert">
       <li aria-hidden="true"><%= alert %></li>
       <%= devise_error_messages! %>
     </button>
