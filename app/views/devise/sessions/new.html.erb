@@ -1,22 +1,22 @@
+<div class="container">
+<h4 class="log-in-heading">Log In</h4>
 
 <% if notice %>
-  <div class="alert alert-success centered" role="alert">
-    <button type="button" class="btn" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">Email or Password was incorrect.</span>
+  <div class="alert alert-success centered error-messages" role="alert">
+    <button type="button" class="btn" data-dismiss="alert">
+      <span aria-hidden="true"><%= notice %></span>
     </button>
   </div>
 <% end %>
 
 <% if alert %>
-  <div class="alert alert-danger centered" role="alert">
-    <button type="button" class="btn" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">Email or Password was incorrect.</span>
+  <div class="alert alert-danger centered error-messages" role="alert">
+    <button type="button" class="btn" data-dismiss="alert">
+      <li aria-hidden="true"><%= alert %></li>
+      <%= devise_error_messages! %>
     </button>
   </div>
 <% end %>
-
-<div class="container">
-<h4 class="log-in-heading">Log In</h4>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="input-field col s12">

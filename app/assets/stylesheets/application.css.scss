@@ -35,16 +35,17 @@ a {
 
 input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #ef5350;
-    box-shadow: 0 1px 0 0 #ef5350;
+    box-shadow: 0 1px 0 0 ;
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
   color: #ef5350;
 }
 
-#error_explanation {
-  margin-bottom: 30px;
-  h2 {
-  font-size: 100%;
+.error-messages {
+  margin-bottom: 40px;
+  margin-top: -20px;
+  .btn {
+  text-transform: normal;
   }
 }
