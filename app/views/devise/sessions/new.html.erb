@@ -3,7 +3,7 @@
 
 <% if notice %>
   <div class="alert alert-success centered error-messages" role="alert">
-    <button type="button" class="btn" data-dismiss="alert">
+    <button type="button" class="btn no-upcase" data-dismiss="alert">
       <span aria-hidden="true"><%= notice %></span>
     </button>
   </div>
@@ -11,7 +11,7 @@
 
 <% if alert %>
   <div class="alert alert-danger centered error-messages" role="alert">
-    <button type="button" class="btn" data-dismiss="alert">
+    <button type="button" class="btn no-upcase" data-dismiss="alert">
       <li aria-hidden="true"><%= alert %></li>
       <%= devise_error_messages! %>
     </button>

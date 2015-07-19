@@ -9,7 +9,7 @@ module DeviseHelper
 
    html = <<-HTML
    <div class="alert alert-error centered error-messages">
-      <button type="button" class="btn" data-dismiss="alert">#{messages}</button>
+      <button type="button" class="btn no-upcase" data-dismiss="alert">#{messages}</button>
    </div>
    HTML
 
