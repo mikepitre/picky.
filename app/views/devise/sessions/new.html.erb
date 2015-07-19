@@ -1,4 +1,20 @@
 
+<% if notice %>
+  <div class="alert alert-success centered" role="alert">
+    <button type="button" class="btn" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">Email or Password was incorrect.</span>
+    </button>
+  </div>
+<% end %>
+
+<% if alert %>
+  <div class="alert alert-danger centered" role="alert">
+    <button type="button" class="btn" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">Email or Password was incorrect.</span>
+    </button>
+  </div>
+<% end %>
+
 <div class="container">
 <h4 class="log-in-heading">Log In</h4>
 
