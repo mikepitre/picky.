@@ -3,13 +3,13 @@
 <% if @selection.lat == "" && @selection.zip_code == "" && @foursquare.results_count == nil %>
   <div class="row">
     <div class="col s10 offset-s1">
-      <h5>We couldn't find your location.<br> Please go back and provide your zip code.</h5>
+      <h5 class="increased-spacing">We couldn't find your location. Please go back and provide your zip code.</h5>
     </div>
   </div>
 <% elsif @foursquare.results_count.zero? %>
   <div class="row">
     <div class="col s10 offset-s1">
-      <h5>We couldn't find any restaurants that met your criteria. Try something more general, reset your filters, or expand the search area.</h5>
+      <h5 class="increased-spacing">We couldn't find any restaurants that met your criteria. Try something more general, reset your filters, or expand the search area.</h5>
     </div>
   </div>
 <% else %>
