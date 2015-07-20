@@ -6,10 +6,10 @@
 #
 one:
   email: example1@example.com
-  password: password1
+  password_digest: password1
 # column: value
 #
 two:
   email: example2@example.com
-  password: password2
+  password_digest: password2
 #  column: value
