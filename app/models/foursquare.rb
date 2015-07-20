@@ -48,7 +48,7 @@ class Foursquare < ActiveRecord::Base
   end
 
   def pick_name(n = 0)
-    venue_info.map { |x| x['venue']['name'] }.uniq[n]
+    venue_info.map { |x| x['venue']['name'] }[n]
   end
 
   def pick_address(n = 0)
@@ -74,7 +74,7 @@ class Foursquare < ActiveRecord::Base
   end
 
   def pick_website(n = 0)
-    venue_info.map { |x| x['venue']['url']}.uniq[n]
+    venue_info.map { |x| x['venue']['url']}[n]
   end
 
   def pick_price(n = 0)
