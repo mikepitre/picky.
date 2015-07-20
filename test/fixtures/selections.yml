@@ -3,7 +3,7 @@
 one:
   healthy: false
   spicy: false
-  cheesy: false
+  cheese: false
   sandwiches: false
   tacos: false
   asian: false
@@ -18,12 +18,12 @@ one:
   take_out: false
   outdoor_seating: false
   serves_alcohol: false
-  meal_id: 
+  meal_id:
 
 two:
   healthy: false
   spicy: false
-  cheesy: false
+  cheese: false
   sandwiches: false
   tacos: false
   asian: false
@@ -38,4 +38,4 @@ two:
   take_out: false
   outdoor_seating: false
   serves_alcohol: false
-  meal_id: 
+  meal_id:
