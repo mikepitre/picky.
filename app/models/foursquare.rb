@@ -47,8 +47,8 @@ class Foursquare < ActiveRecord::Base
     @response['response']
   end
 
-  def pick_name
-    venue_info.map { |x| x['venue']['name'] }.uniq.first
+  def pick_name(n = 0)
+    venue_info.map { |x| x['venue']['name'] }.uniq[n]
   end
 
   def pick_address

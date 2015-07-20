@@ -16,7 +16,7 @@
   <div class="row">
     <div class="our-pick-header centered">
       <h5>Our pick for you is:</h5>
-      <h3><%= @foursquare.pick_name %></h3>
+      <h3><%= @foursquare.pick_name(params[:pick].to_i) %></h3>
     </div>
   </div>
   <div class="row">
