@@ -51,8 +51,8 @@ class Foursquare < ActiveRecord::Base
     venue_info.map { |x| x['venue']['name'] }.uniq[n]
   end
 
-  def pick_address
-    address = venue_info.map { |x| x.fetch('venue').fetch('location').fetch('formattedAddress') }.first
+  def pick_address(n = 0)
+    address = venue_info.map { |x| x.fetch('venue').fetch('location').fetch('formattedAddress') }[n]
     if address.nil?
       ''
     else
@@ -60,8 +60,8 @@ class Foursquare < ActiveRecord::Base
     end
   end
 
-  def pick_city_and_zip
-    city_zip = venue_info.map { |x| x['venue']['location']['formattedAddress']}.first[1]
+  def pick_city_and_zip(n = 0)
+    city_zip = venue_info.map { |x| x['venue']['location']['formattedAddress']}[n][1]
     if city_zip.nil?
       ''
     else
@@ -69,27 +69,27 @@ class Foursquare < ActiveRecord::Base
     end
   end
 
-  def pick_phone_number
-    venue_info.map { |x| x['venue']['contact']['formattedPhone']}.first
+  def pick_phone_number(n = 0)
+    venue_info.map { |x| x['venue']['contact']['formattedPhone']}[n]
   end
 
-  def pick_website
-    venue_info.map { |x| x['venue']['url']}.first
+  def pick_website(n = 0)
+    venue_info.map { |x| x['venue']['url']}[n]
   end
 
-  def pick_price
-    venue_info.map { |x| x['venue']['price']}.first['tier']
+  def pick_price(n = 0)
+    venue_info.map { |x| x['venue']['price']}[n]['tier']
   end
 
-  def pick_rating
-    venue_info.map { |x| x['venue']['rating']}.first
+  def pick_rating(n = 0)
+    venue_info.map { |x| x['venue']['rating']}[n]
   end
 
-  def pick_hours
-    if venue_info.map { |x| x['venue']['hours']}.first == nil
+  def pick_hours(n = 0)
+    if venue_info.map { |x| x['venue']['hours']}[n] == nil
       ''
     else
-      venue_info.map { |x| x['venue']['hours']}.first['status']
+      venue_info.map { |x| x['venue']['hours']}[n]['status']
     end
   end
 
@@ -97,8 +97,8 @@ class Foursquare < ActiveRecord::Base
     @response['response']['totalResults']
   end
 
-  def venue_info
-    @response['response']['groups'].first['items']
+  def venue_info(n = 0)
+    @response['response']['groups'][n]['items']
   end
 
 end
