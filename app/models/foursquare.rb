@@ -40,7 +40,7 @@ class Foursquare < ActiveRecord::Base
       choices += ["&near=#{selection.zip_code}"]
     end
 
-    get_pick(choices.compact.join("+").gsub(/serves_alcohol/,"drinks").gsub(/outdoor_seating/,"outdoor+seating").gsub(/take_out/, "good+for+a+quick+meal"))
+    get_pick(choices.compact.join("+").gsub(/serves_alcohol/,"beer").gsub(/outdoor_seating/,"outdoor+seating").gsub(/take_out/, "good+for+a+quick+meal"))
   end
 
   def response
