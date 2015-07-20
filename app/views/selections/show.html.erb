@@ -33,7 +33,7 @@
         <i class="material-icons">phone</i><%= @foursquare.pick_phone_number(params[:pick].to_i) %></br>
       <% end %>
       <% if @foursquare.pick_website(params[:pick].to_i) %>
-        <i class="material-icons">web</i><%= link_to @foursquare.pick_website(params[:pick].to_i).gsub(/(?:f|ht)tps?:\/[^\s]/,"").gsub(/www./,"").gsub(/([^\.com]+)$/,""), @foursquare.pick_website(params[:pick].to_i) %></br>
+        <i class="material-icons">web</i><%= link_to @foursquare.pick_website(params[:pick].to_i).gsub(/(?:f|ht)tps?:\/[^\s]/,"").gsub(/www./,"").gsub(/([^\.com]+)$/,"").gsub(/([^\.net]+)$/,""), @foursquare.pick_website(params[:pick].to_i) %></br>
       <% end %>
       <i class="material-icons">credit_card</i>Price Tier: <%= "$" * @foursquare.pick_price(params[:pick].to_i).to_i %>
       </br>
