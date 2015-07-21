@@ -19,6 +19,9 @@
       <h3><%= @foursquare.pick_name(params[:pick].to_i) %></h3>
     </div>
   </div>
+  <div class="centered">
+      <%= link_to "Next Pick", "#", class: "btn waves-effect waves-light red lighten-1" %>
+  </div>
   <div class="row">
     <div class="address col s11 offset-s1 m5 offset-m1 l4 offset-l2">
       <i class="material-icons">location_on</i><%= @foursquare.pick_name(params[:pick].to_i) %></br>
