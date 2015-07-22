@@ -3,8 +3,6 @@ script:
   - rake db:create db:migrate db:test:prepare
   - rake
 rvm:
-  - 2.2.2
-  - 2.2.1
   - 2.2.0
 
 # uncomment this line if your project needs to run something other than `rake`:
