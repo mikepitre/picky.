@@ -13,6 +13,7 @@ A web app that recommends a restaurant based on a user's criteria.
   1. `bundle install`
   1. `rake db:create db:migrate`
   1. 'Get API Keys from https://developer.foursquare.com/ and https://developers.google.com/maps/documentation/javascript/tutorial#api_key'
+  1. 'Put your keys in your application.yml file'
 
 ## Noteable Technologies used
   - Rails
