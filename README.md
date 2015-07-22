@@ -31,3 +31,9 @@ A web app that recommends a restaurant based on flavors, food types and the rest
   - Figaro
   - Materialize-Sass
 
+## Contact Info
+  - LinkedIn: https://www.linkedin.com/in/mikepitre
+  - Twitter: @mepitre430
+
+
+
