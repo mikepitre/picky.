@@ -2,7 +2,7 @@
   - eatpicky.com
 
 ## Process
-  UMLs: ![Alt text](app/assets/images/picky_uml.png?raw=true "Picky UML")
+  ![Alt text](app/assets/images/picky_uml.png?raw=true "Picky UML")
   - Trello Board: https://trello.com/b/2waTHpLM/final-project
   - Wireframes: https://gomockingbird.com/projects/4vkojw6/4gXVnC
 
