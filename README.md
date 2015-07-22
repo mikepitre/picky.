@@ -1,4 +1,4 @@
-## Live SIte
+## Live Site
   - www.eatpicky.com
 
 ## Process
@@ -8,14 +8,15 @@
 
 ## Setup Steps
   1. `bundle install`
-  1. `rake db:create db:migrate` (or setup)
-  1. ADDITIONAL SETUP STEPS GO HERE
-
-## How to run tests
-  - make sure you have migrated `rake db:migrate`
-  - make sure you have added your schema to test `rake db:test:prepare`
-  - Run `guard` to have guard re-run your tests each time you make changes
+  1. `rake db:create db:migrate`
+  1. 'Get API Keys from https://developer.foursquare.com/ and https://developers.google.com/maps/documentation/javascript/tutorial#api_key'
 
 ## Noteable Technologies used
-  - React
-  - The cutest edge
+  - Rails
+  - Postgres
+  - Puma Server
+  - Hosted on Heroku
+  - Materialize.css
+  - Sass
+  - Foursquare API
+  - Google Maps API
