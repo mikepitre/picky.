@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   devise_for :users
 
   authenticate :user do
-    resources :selections
-    resources :meals
+    resources :selections, only: [:show, :new, :create]
+    # resources :meals
   end
 
-
+get "*path", to: redirect('/')
 end
