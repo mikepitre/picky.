@@ -4,7 +4,7 @@
 ## Process
   ![Alt text](app/assets/images/picky_uml.png?raw=true "Picky UML")
   - Trello Board: https://trello.com/b/2waTHpLM/final-project
-  - Wireframes: https://gomockingbird.com/projects/4vkojw6/4gXVnC
+  - Mockup: https://gomockingbird.com/projects/4vkojw6/4gXVnC
 
 ## Setup Steps
   1. `bundle install`
