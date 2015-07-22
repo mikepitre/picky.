@@ -1,5 +1,5 @@
 # picky.
-A web app that recommends a restaurant based on a user's criteria.
+A web app that recommends a restaurant based on flavors, food types and the restaurant's setting.
 
 ## Live Site
   - www.eatpicky.com
