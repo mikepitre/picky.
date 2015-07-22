@@ -2,9 +2,9 @@
   - eatpicky.com
 
 ## Process
-  - https://trello.com/b/2waTHpLM/final-project
-  - ![Alt text](app/assets/images/picky_uml.png?raw=true "Picky UML")
-  - Wireframes: https://gomockingbird.com/projects/4vkojw6/4gXVnC
+  Trello Board: https://trello.com/b/2waTHpLM/final-project
+  UMLs: ![Alt text](app/assets/images/picky_uml.png?raw=true "Picky UML")
+  Wireframes: https://gomockingbird.com/projects/4vkojw6/4gXVnC
 
 ## Setup Steps
   1. `bundle install`
