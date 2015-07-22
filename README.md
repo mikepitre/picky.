@@ -1,5 +1,5 @@
 ## Live SIte
-  - eatpicky.com
+  - www.eatpicky.com
 
 ## Process
   ![Alt text](app/assets/images/picky_uml.png?raw=true "Picky UML")
