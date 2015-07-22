@@ -1,3 +1,6 @@
+# picky.
+A web app that recommends a restaurant based on a user's criteria.
+
 ## Live Site
   - www.eatpicky.com
 
@@ -20,3 +23,10 @@
   - Sass
   - Foursquare API
   - Google Maps API
+
+## Noteable Gems Used
+  - Devise
+  - HTTParty
+  - Figaro
+  - Materialize-Sass
+
