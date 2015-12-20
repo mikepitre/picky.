@@ -15,24 +15,24 @@
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="/" class="brand-logo">picky.</a>
-      <ul class="right hide-on-med-and-down">
+      <!-- <ul class="right hide-on-med-and-down">
         <% if user_signed_in? %>
             <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
           <% else %>
             <li><a href="/users/sign_up">Sign Up</a></li>
             <li><%= link_to 'Log In', "/users/sign_in" %></li>
         <% end %>
-      </ul>
+      </ul> -->
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/selections/new">Get a Pick!</a></li>
-        <% if user_signed_in? %>
+        <!-- <% if user_signed_in? %>
             <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
           <% else %>
             <li><a href="/users/sign_up">Sign Up</a></li>
             <li><%= link_to 'Log In', "/users/sign_in" %></li>
-        <% end %>
+        <% end %> -->
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

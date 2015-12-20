@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails picky: development" uuid="7f3e6449-f423-4473-bb1c-c06738b49e7c">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails picky: test" uuid="5aef7d36-dffb-4d44-8c87-17e99bce5e63">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails picky: production" uuid="d671b309-865b-4fb5-afd5-66c211cab22e">
+      <first-sync>true</first-sync>
+      <user-name>picky</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddffadfe3dfe9dfe1dff3dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>

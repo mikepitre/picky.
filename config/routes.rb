@@ -3,10 +3,10 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  authenticate :user do
+  # authenticate :user do
     resources :selections, only: [:show, :new, :create]
     # resources :meals
-  end
+  # end
 
 get "*path", to: redirect('/')
 end
